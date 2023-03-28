@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class rightTriangle {
+    public static void main(String[] arg){
+        System.out.println("****Bir Dik üçgenin kenarları ile alanı hesaplama****");
+        System.out.println("Dik üçgenin kenar uzunluklarını giriniz: ");
+        Scanner tara = new Scanner(System.in);
+        int a = tara.nextInt();
+        int b = tara.nextInt();
+        int c = tara.nextInt();
+        System.out.println("Dik üçgenin kenarları: " + a + "," + b + "," + c + " dir");
+        double perimeter = (a+b+c) / 2;
+        double area = Math.sqrt(perimeter * (perimeter-a)* (perimeter-b) * (perimeter-c));
+        System.out.println("Dik üçgenin alanı: " + area);
+    }
+
+}
